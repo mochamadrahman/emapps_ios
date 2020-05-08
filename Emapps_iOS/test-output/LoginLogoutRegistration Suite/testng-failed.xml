@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [LoginLogoutRegistration Suite]">
+  <test thread-count="1" name="PositiveLogin(failed)">
+    <classes>
+      <class name="tests.PositiveLogin">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- tests.PositiveLogin -->
+    </classes>
+  </test> <!-- PositiveLogin(failed) -->
+</suite> <!-- Failed suite [LoginLogoutRegistration Suite] -->

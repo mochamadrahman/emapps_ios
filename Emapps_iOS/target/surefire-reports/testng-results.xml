@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LoginLogoutRegistration Suite" duration-ms="407399" started-at="2020-05-06T15:57:57 WIB" finished-at="2020-05-06T16:04:44 WIB">
+    <groups>
+    </groups>
+    <test name="PositiveLogin" duration-ms="101925" started-at="2020-05-06T15:57:57 WIB" finished-at="2020-05-06T15:59:39 WIB">
+      <class name="tests.PositiveLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.PositiveLogin@5ce81285]" name="setup" is-config="true" duration-ms="74020" started-at="2020-05-06T15:57:57 WIB" finished-at="2020-05-06T15:59:11 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLogin()[pri:1, instance:tests.PositiveLogin@5ce81285]" name="testLogin" duration-ms="27801" started-at="2020-05-06T15:59:11 WIB" finished-at="2020-05-06T15:59:39 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- tests.PositiveLogin -->
+    </test> <!-- PositiveLogin -->
+    <test name="LogOut" duration-ms="45446" started-at="2020-05-06T15:59:39 WIB" finished-at="2020-05-06T16:00:25 WIB">
+      <class name="tests.Logout">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Logout@731a74c]" name="setup" is-config="true" duration-ms="12691" started-at="2020-05-06T15:59:39 WIB" finished-at="2020-05-06T15:59:52 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:tests.Logout@731a74c]" name="loginPage" duration-ms="23367" started-at="2020-05-06T15:59:52 WIB" finished-at="2020-05-06T16:00:15 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="testLogout()[pri:1, instance:tests.Logout@731a74c]" name="testLogout" duration-ms="9365" started-at="2020-05-06T16:00:15 WIB" finished-at="2020-05-06T16:00:25 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+      </class> <!-- tests.Logout -->
+    </test> <!-- LogOut -->
+    <test name="NegativeLogin" duration-ms="163513" started-at="2020-05-06T16:00:25 WIB" finished-at="2020-05-06T16:03:08 WIB">
+      <class name="tests.NegativeLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.NegativeLogin@65e2dbf3]" name="setup" is-config="true" duration-ms="14678" started-at="2020-05-06T16:00:25 WIB" finished-at="2020-05-06T16:00:39 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invalidUsername()[pri:1, instance:tests.NegativeLogin@65e2dbf3]" name="invalidUsername" duration-ms="31193" started-at="2020-05-06T16:00:39 WIB" finished-at="2020-05-06T16:01:10 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsername -->
+        <test-method status="PASS" signature="invalidPassword()[pri:2, instance:tests.NegativeLogin@65e2dbf3]" name="invalidPassword" duration-ms="35586" started-at="2020-05-06T16:01:10 WIB" finished-at="2020-05-06T16:01:46 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method status="PASS" signature="blankUsername()[pri:3, instance:tests.NegativeLogin@65e2dbf3]" name="blankUsername" duration-ms="38091" started-at="2020-05-06T16:01:46 WIB" finished-at="2020-05-06T16:02:24 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankUsername -->
+        <test-method status="PASS" signature="blankPassword()[pri:4, instance:tests.NegativeLogin@65e2dbf3]" name="blankPassword" duration-ms="28959" started-at="2020-05-06T16:02:24 WIB" finished-at="2020-05-06T16:02:53 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankPassword -->
+        <test-method status="PASS" signature="blankUsernameAndPassword()[pri:5, instance:tests.NegativeLogin@65e2dbf3]" name="blankUsernameAndPassword" duration-ms="14999" started-at="2020-05-06T16:02:53 WIB" finished-at="2020-05-06T16:03:08 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankUsernameAndPassword -->
+      </class> <!-- tests.NegativeLogin -->
+    </test> <!-- NegativeLogin -->
+    <test name="NegativeRegistration" duration-ms="96232" started-at="2020-05-06T16:03:08 WIB" finished-at="2020-05-06T16:04:44 WIB">
+      <class name="tests.NegativeRegistration">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.NegativeRegistration@6e0e048a]" name="setup" is-config="true" duration-ms="14738" started-at="2020-05-06T16:03:08 WIB" finished-at="2020-05-06T16:03:23 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="firstNameMaxLengthChar()[pri:1, instance:tests.NegativeRegistration@6e0e048a]" name="firstNameMaxLengthChar" duration-ms="18087" started-at="2020-05-06T16:03:23 WIB" finished-at="2020-05-06T16:03:41 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstNameMaxLengthChar -->
+        <test-method status="PASS" signature="lastNameMaxLengthChar()[pri:2, instance:tests.NegativeRegistration@6e0e048a]" name="lastNameMaxLengthChar" duration-ms="21051" started-at="2020-05-06T16:03:41 WIB" finished-at="2020-05-06T16:04:02 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastNameMaxLengthChar -->
+        <test-method status="PASS" signature="invalidEmailFormat()[pri:3, instance:tests.NegativeRegistration@6e0e048a]" name="invalidEmailFormat" duration-ms="12375" started-at="2020-05-06T16:04:02 WIB" finished-at="2020-05-06T16:04:14 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailFormat -->
+        <test-method status="PASS" signature="passwordLess6Characters()[pri:4, instance:tests.NegativeRegistration@6e0e048a]" name="passwordLess6Characters" duration-ms="10681" started-at="2020-05-06T16:04:14 WIB" finished-at="2020-05-06T16:04:25 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordLess6Characters -->
+        <test-method status="PASS" signature="passwordMore20Characters()[pri:5, instance:tests.NegativeRegistration@6e0e048a]" name="passwordMore20Characters" duration-ms="19294" started-at="2020-05-06T16:04:25 WIB" finished-at="2020-05-06T16:04:44 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordMore20Characters -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.NegativeRegistration@6e0e048a]" name="teardown" is-config="true" duration-ms="1172" started-at="2020-05-06T16:04:44 WIB" finished-at="2020-05-06T16:04:46 WIB">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.NegativeRegistration -->
+    </test> <!-- NegativeRegistration -->
+  </suite> <!-- LoginLogoutRegistration Suite -->
+</testng-results>

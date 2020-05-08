@@ -1,0 +1,6 @@
+tests/NegativeRegistration.class
+tests/Logout.class
+tests/NegativeLogin.class
+tests/LoginPage.class
+tests/PositiveLogin.class
+tests/BaseClass.class

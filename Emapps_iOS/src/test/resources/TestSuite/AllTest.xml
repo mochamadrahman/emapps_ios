@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1"
+	name="LoginLogoutRegistration Suite">
+
+	<test name="PositiveLogin">
+		<classes>
+			<class name="tests.PositiveLogin" />
+		</classes>
+	</test>
+	
+	<test name="LogOut">
+		<classes>
+			<class name="tests.Logout" />
+		</classes>
+	</test>
+
+	<test name="NegativeLogin">
+		<classes>
+			<class name="tests.NegativeLogin" />
+		</classes>
+	</test>
+
+	<test name="NegativeRegistration">
+		<classes>
+			<class name="tests.NegativeRegistration" />
+		</classes>
+	</test>
+</suite>

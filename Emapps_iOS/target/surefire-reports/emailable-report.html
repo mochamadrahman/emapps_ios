@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">LoginLogoutRegistration Suite</th></tr>
+<tr><td><a href="#t0">PositiveLogin</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">101,925</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">LogOut</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">45,446</td><td></td><td></td></tr>
+<tr><td><a href="#t2">NegativeLogin</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">163,513</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">NegativeRegistration</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">96,232</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">13</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">407,116</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">LoginLogoutRegistration Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PositiveLogin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.PositiveLogin</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1588755551594</td><td rowspan="1">27801</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">LogOut &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.Logout</td><td><a href="#m1">loginPage</a></td><td rowspan="1">1588755592326</td><td rowspan="1">23367</td></tr><tr class="passedeven"><td><a href="#m2">testLogout</a></td><td rowspan="1">1588755615715</td><td rowspan="1">9365</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">NegativeLogin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.NegativeLogin</td><td><a href="#m3">blankPassword</a></td><td rowspan="1">1588755744667</td><td rowspan="1">28959</td></tr><tr class="passedeven"><td><a href="#m4">blankUsername</a></td><td rowspan="1">1588755706575</td><td rowspan="1">38091</td></tr><tr class="passedeven"><td><a href="#m5">blankUsernameAndPassword</a></td><td rowspan="1">1588755773627</td><td rowspan="1">14999</td></tr><tr class="passedeven"><td><a href="#m6">invalidPassword</a></td><td rowspan="1">1588755670988</td><td rowspan="1">35586</td></tr><tr class="passedeven"><td><a href="#m7">invalidUsername</a></td><td rowspan="1">1588755639794</td><td rowspan="1">31193</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">NegativeRegistration &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.NegativeRegistration</td><td><a href="#m8">firstNameMaxLengthChar</a></td><td rowspan="1">1588755803387</td><td rowspan="1">18087</td></tr><tr class="passedeven"><td><a href="#m9">invalidEmailFormat</a></td><td rowspan="1">1588755842527</td><td rowspan="1">12375</td></tr><tr class="passedeven"><td><a href="#m10">lastNameMaxLengthChar</a></td><td rowspan="1">1588755821475</td><td rowspan="1">21051</td></tr><tr class="passedeven"><td><a href="#m11">passwordLess6Characters</a></td><td rowspan="1">1588755854903</td><td rowspan="1">10681</td></tr><tr class="passedeven"><td><a href="#m12">passwordMore20Characters</a></td><td rowspan="1">1588755865585</td><td rowspan="1">19294</td></tr></tbody>
+</table>
+<h2>PositiveLogin</h2><h3 id="m0">tests.PositiveLogin#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LogOut</h2><h3 id="m1">tests.Logout#loginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.Logout#testLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NegativeLogin</h2><h3 id="m3">tests.NegativeLogin#blankPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.NegativeLogin#blankUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.NegativeLogin#blankUsernameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.NegativeLogin#invalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.NegativeLogin#invalidUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NegativeRegistration</h2><h3 id="m8">tests.NegativeRegistration#firstNameMaxLengthChar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.NegativeRegistration#invalidEmailFormat</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.NegativeRegistration#lastNameMaxLengthChar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.NegativeRegistration#passwordLess6Characters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.NegativeRegistration#passwordMore20Characters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
