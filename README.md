@@ -1,2 +1,2 @@
 # emapps_ios
-Repository for Automation Test Script [QA] belong to Bootcamp Scrum Team4 
+Repository for Automation Test Script [QA] belong to Mitrais Bootcamp Scrum Team4 
