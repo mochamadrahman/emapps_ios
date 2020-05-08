@@ -28,7 +28,9 @@ public class BaseClass {
 			caps.setCapability("platformVersion", "12.2");
 			caps.setCapability("deviceName", "iPhone X");
 //			caps.setCapability("deviceName", "iPhone 8 Plus");
-			caps.setCapability("app", "/Users/rahman/Desktop/iOSEmapps.app");
+//			caps.setCapability("app", "/Users/rahman/Desktop/iOSEmapps.app");
+			caps.setCapability("app", "/Users/rahman/git/emapps_ios/Emapps_iOS/src/main/resources/iOSEmapps.app");
+			
 			caps.setCapability("noReset", true);
 			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
 
