@@ -10,8 +10,9 @@ import org.testng.annotations.BeforeTest;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import tests.AppiumExtentReport2;
 
-public class BaseClass {
+public class BaseClass extends AppiumExtentReport2{
 
 	protected IOSDriver<IOSElement> driver;
 
