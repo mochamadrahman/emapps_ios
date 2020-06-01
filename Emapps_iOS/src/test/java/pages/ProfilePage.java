@@ -26,18 +26,30 @@ public class ProfilePage extends BaseClass {
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Sign Out\"]")
 	private IOSElement signoutElement;
+	
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Password\"]")
+	private IOSElement passwordElement;
 
-	public boolean welcomeBack() {
+	public boolean isWelcomeBackDisplayed() {
 		return welcomeBackElement.isDisplayed();
 	}
 
 	public void clickSignOut() {
 		signoutElement.click();
 	}
+	
+	public void clickPasswordChange() {
+		passwordElement.click();
+	}
 
 	public void logout() {
 
 		clickSignOut();
+	}
+	
+	public void password() {
+
+		clickPasswordChange();
 	}
 
 }

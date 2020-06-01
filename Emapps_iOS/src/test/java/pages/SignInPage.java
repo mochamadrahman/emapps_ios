@@ -26,6 +26,12 @@ public class SignInPage extends BaseClass {
 
 	@iOSXCUITFindBy(id = "Password")
 	private IOSElement passwordElement;
+	
+	@iOSXCUITFindBy(id = "Welcome Back!")
+	private IOSElement welcomeBackElement;
+	
+	@iOSXCUITFindBy(id = "Event Management")
+	private IOSElement eventManagementElement;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeButton[@name=\"Sign In\"]")
 	private IOSElement signInButtonElement;
@@ -39,14 +45,18 @@ public class SignInPage extends BaseClass {
 	@iOSXCUITFindBy(id = "Toolbar Done Button")
 	private IOSElement hideKeyboard;
 
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Username or Password was incorrect\"]")
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Failed to process\"]")
 	private IOSElement incorrectUserPassword;
 
 	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name=\"Username or Password cannot blank\"]")
 	private IOSElement blankUserPassword;
 
-	public boolean isSignInDisplayed() {
-		return signInButtonElement.isDisplayed();
+//	public boolean isSignInPageDisplayed() {
+//		return eventManagementElement.isDisplayed();
+//	}
+	
+	public boolean isSignInPageDisplayed() {
+		return welcomeBackElement.isDisplayed();
 	}
 
 	public boolean incorrectUserPassDisplayed() {
@@ -81,7 +91,7 @@ public class SignInPage extends BaseClass {
 		signInButtonElement.click();
 	}
 
-	public void clickSigUp() {
+	public void clickSignUp() {
 		signUpElement.click();
 	}
 
@@ -94,7 +104,8 @@ public class SignInPage extends BaseClass {
 	}
 
 	public void login(String name, String password) {
-
+		
+		clearEmail();
 		typeEmail(name);
 		clickDoneButtonKeyboard();
 		typePassword(password);
@@ -132,7 +143,19 @@ public class SignInPage extends BaseClass {
 
 	public void signup() {
 
-		clickSigUp();
+		clickSignUp();
 	}
 
+	/**
+    *
+    * @return the login message
+    */
+   public String getErrorMessage1() {
+       return driver.findElementById("Username or Password was incorrect").getText();
+   }
+	
+   public String getErrorMessage2() {
+       return driver.findElementById("Username or Password cannot blank").getText();
+   }
+	
 }
