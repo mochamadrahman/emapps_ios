@@ -1,6 +1,10 @@
-tests/NegativeRegistration.class
-tests/Logout.class
-tests/NegativeLogin.class
-tests/LoginPage.class
-tests/PositiveLogin.class
-tests/BaseClass.class
+pages/ChangePassPage.class
+tests/EmappsTestReport.class
+tests/Registration.class
+pages/HomeScreenPage.class
+pages/ProfilePage.class
+pages/SignUpPage.class
+tests/LoginLogout.class
+pages/SignInPage.class
+tests/ChangePassword.class
+pages/BaseClass.class

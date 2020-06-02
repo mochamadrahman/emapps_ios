@@ -1,6 +1,10 @@
-/Users/rahman/Desktop/comemapps/src/test/java/tests/NegativeRegistration.java
-/Users/rahman/Desktop/comemapps/src/test/java/tests/PositiveLogin.java
-/Users/rahman/Desktop/comemapps/src/test/java/tests/Logout.java
-/Users/rahman/Desktop/comemapps/src/test/java/tests/BaseClass.java
-/Users/rahman/Desktop/comemapps/src/test/java/tests/LoginPage.java
-/Users/rahman/Desktop/comemapps/src/test/java/tests/NegativeLogin.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/pages/HomeScreenPage.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/pages/BaseClass.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/pages/ChangePassPage.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/tests/LoginLogout.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/pages/SignUpPage.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/tests/ChangePassword.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/tests/EmappsTestReport.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/pages/ProfilePage.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/tests/Registration.java
+/Users/rahman/git/emapps_ios/Emapps_iOS/src/test/java/pages/SignInPage.java
