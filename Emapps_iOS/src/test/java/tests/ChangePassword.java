@@ -1,5 +1,8 @@
 package tests;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -125,9 +128,44 @@ public class ChangePassword extends BaseClass {
 		if (!changepasspage.isInvalidOldPasswordDisplayed()) {
 			return;
 		}
+		
+		/* This Waiting time just want to sure element Back can be identified by appium */
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Back")));
+
+		changepasspage.cancelChangePassword();
+
+		ProfilePage profilepage = new ProfilePage(driver);
+		if (!profilepage.isWelcomeBackDisplayed()) {
+			return;
+		}
 
 		System.out.println("Invalid Old Password Test successfully");
 		System.out.println("\n");
+	}
+	
+	@Test(priority = 5)
+	public void cancelChangePassword() {
+
+		ProfilePage profilepage = new ProfilePage(driver);
+		profilepage.clickPasswordChange();
+
+		System.out.println("Starting Cancel Change Password Test");
+
+		/* This Waiting time just want to sure element Back can be identified by appium */
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Back")));
+
+		ChangePassPage changepasspage = new ChangePassPage(driver);
+		changepasspage.cancelChangePassword();
+
+		if (!profilepage.isWelcomeBackDisplayed()) {
+			return;
+		}
+
+		System.out.println("Cancel Change Password Test successfully");
+		System.out.println("\n");
+
 	}
 
 
