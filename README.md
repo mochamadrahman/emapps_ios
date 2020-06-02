@@ -3,6 +3,8 @@ Repository for Automation Test Script [QA] belong to Mitrais Bootcamp Scrum Team
 
 !!!!   Notes   !!!
 
-Please adapt path folder of your app file on BaseClass.java [line 31]:
+1. Always update iOSEmapps.ipa file with latest one under root directory
 
-caps.setCapability("app", "/Users/rahman/Desktop/iOSEmapps.app");
+2. Build and package your tests for AWS Device farm :
+- caps.setCapability("app", app.getAbsolutePath()); --> disable this line in BaseClass.java file --> // caps.setCapability("app", app.getAbsolutePath());
+- $ mvn clean package -DskipTests=true
