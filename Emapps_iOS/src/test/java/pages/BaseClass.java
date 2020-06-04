@@ -39,7 +39,7 @@ public class BaseClass extends EmappsTestReport{
 //			final File appDir = new File(classpathRoot, "src/main/resources/");
 			final File appDir = new File(classpathRoot, "");
 			final File app = new File(appDir, "iOSEmapps.ipa");
-			caps.setCapability("app", app.getAbsolutePath());
+//			caps.setCapability("app", app.getAbsolutePath());
 
 			URL url = new URL("http://localhost:4723/wd/hub");
 			driver = new IOSDriver<IOSElement>(url, caps);

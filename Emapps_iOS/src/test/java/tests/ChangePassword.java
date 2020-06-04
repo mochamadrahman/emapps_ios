@@ -80,7 +80,7 @@ public class ChangePassword extends BaseClass {
 
 		HomeScreenPage homescreenpage = new HomeScreenPage(driver);
 
-		System.out.println("Starting Login with New Password Test successfully");
+		System.out.println("Login with New Password Test successfully");
 		System.out.println("\n");
 
 		homescreenpage.clickMore();
